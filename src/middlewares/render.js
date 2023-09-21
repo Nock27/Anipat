@@ -2,13 +2,13 @@ import { render } from '../../node_modules/lit-html/lit-html.js'
 import { navigationView } from '../pageViews/navigation.js';
 
 
-const headerElement = document.getElementById('navigation')
+const headerElement = document.getElementById('navigationHeader')
 const mainElement = document.getElementById('content');
 
 
 
 export const renderHeader = (ctx, next) => {
-    render(navigationView(), headerElement)
+    render(navigationView(ctx), headerElement)
 
     next();
 }

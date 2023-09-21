@@ -46,8 +46,9 @@ export const registerView = (ctx) => {
             alert('Password confirmation does not match')
             return;
         }
-        authService.register(email,password);
-        ctx.page.redirect('/');
+        authService.register(email,password)
+            .then(() =>  ctx.page.redirect('/'))
+            
     }
     ctx.render(registerTemplate(submitHandler))
 }

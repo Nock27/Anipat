@@ -37,8 +37,9 @@ export const loginView = (ctx) => {
             alert('All fields must be filled');
             return;
         }
-        authService.login(email,password);
-        ctx.page.redirect('/');
+        authService.login(email,password)
+            .then(() =>  ctx.page.redirect('/'))
+       
     }
     ctx.render(loginTemplate(submitHandler));
 }

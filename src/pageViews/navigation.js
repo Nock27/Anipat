@@ -1,7 +1,6 @@
 import { html } from '../../node_modules/lit-html/lit-html.js'
 import * as userService from '../services/userService.js'
 
-const user = userService.getUserData();
 
 const guestView = html`
     <li><a href="/login">Login</a></li>
@@ -32,5 +31,6 @@ const navigationTemplate = (user) => html`
 `
 
 export const navigationView = (ctx) => {
+    const user = userService.getUserData();
     return navigationTemplate(user);
 }
