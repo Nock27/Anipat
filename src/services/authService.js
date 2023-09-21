@@ -20,3 +20,8 @@ export const register = (email, password) => {
             alert('Succesfully registered!');
         }) 
 }
+
+export const logout = () => {
+    requster.get(`${baseUrl}/logout`)
+        .then(() => userService.clearUserData())
+}
