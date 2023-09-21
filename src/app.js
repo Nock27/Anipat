@@ -1,5 +1,6 @@
 import page from "../node_modules/page/page.mjs";
 import { ctxRender, renderHeader } from "./middlewares/render.js";
+import { dashboardView } from "./pageViews/dashboard.js";
 import { homeView } from "./pageViews/home.js";
 import { loginView } from "./pageViews/login.js";
 import { logoutAction } from "./pageViews/logout.js";
@@ -12,5 +13,6 @@ page('/', homeView);
 page('/login', loginView);
 page('/register', registerView)
 page('/logout', logoutAction)
+page('/dashboard', dashboardView)
 
 page.start();
