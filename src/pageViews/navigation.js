@@ -1,4 +1,7 @@
 import { html } from '../../node_modules/lit-html/lit-html.js'
+import * as userService from '../services/userService.js'
+
+const user = userService.getUserData();
 
 const guestView = html`
     <li><a href="/login">Login</a></li>
@@ -10,7 +13,7 @@ const userView = html`
     <li><a href="/logout">Logout</a></li>
 `
 
-const navigationTemplate = () => html`
+const navigationTemplate = (user) => html`
     <nav>
         <section class="logo">
             <img src="./images/logo.png" alt="logo">
@@ -19,9 +22,9 @@ const navigationTemplate = () => html`
             <!--Users and Guest-->
             <li><a href="/">Home</a></li>
             <li><a href="/dashboard">Dashboard</a></li>
-            ${true
-            ? guestView
-            : userView
+            ${user
+            ? userView
+            : guestView
             }
             
         </ul>
@@ -29,5 +32,5 @@ const navigationTemplate = () => html`
 `
 
 export const navigationView = (ctx) => {
-    return navigationTemplate();
+    return navigationTemplate(user);
 }
