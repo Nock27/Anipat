@@ -29,9 +29,7 @@ const dashboardtemplate = (animals) => html`
            ${animals.length > 0
             ? animals.map(animal => animalBoardTemplate(animal))
             : noAnimalScreen
-        }
-            <!--If there is no pets in dashboard-->
-            
+        }   
         </div>
     </section>
 `
