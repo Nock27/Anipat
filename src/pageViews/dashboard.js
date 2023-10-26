@@ -1,11 +1,14 @@
 import { html } from '../../node_modules/lit-html/lit-html.js'
 import * as animalService from '../services/animalService.js'
 
+
+
 const noAnimalScreen = html`
     <div>
         <p class="no-pets">No pets in dashboard</p>
     </div>
 `
+
 
 const animalBoardTemplate = (animal) => html`
     <div class="animals-board">
@@ -15,8 +18,8 @@ const animalBoardTemplate = (animal) => html`
         <h2 class="name">${animal.name}</h2>
         <h3 class="breed">${animal.breed}</h3>
         <div class="action">
-            <a class="btn" href="dashboard/${animal._id}">Details</a>
-        </div>
+            <a class="btn" href="/pets/${animal._id}">Details</a>
+         </div> 
     </div>
 `
 
