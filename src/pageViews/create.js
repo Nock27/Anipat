@@ -4,7 +4,7 @@ import * as animalService from "../services/animalService.js"
 const createTemplate = (createPetHandler) => html`
     <section id="createPage">
         <form class="createForm" @submit=${createPetHandler}>
-            <img src="./images/cat-create.jpg">
+            <img src="./images/animal-icon-create.png">
             <div>
                 <h2>Create PetPal</h2>
                 <div class="name">
@@ -47,9 +47,9 @@ export const createView = (ctx) => {
         const image = formData.get('image');
         if(name.length !== 0 && breed.length !== 0 && age.length !== 0 && weight.length !== 0 && image.length !== 0){
             animalService.createOne(name,breed,age,weight,image)
-                .then(animal => {
-                    console.log(animal);
-                    ctx.page.redirect('/');
+                .then(() => {
+                    
+                    ctx.page.redirect('/dashboard');
                 })
         }else{
             alert("All fields must be filled");
