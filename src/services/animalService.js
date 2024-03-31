@@ -7,16 +7,16 @@ export const getAll = () => {
     return requster.get(`${baseUrl}/data/pets?sortBy=_createdOn%20desc&distinct=name`);
 }
 
-export const createOne = (name,breed,age,weight,image) => {
-    return requster.post(`${baseUrl}/data/pets`,{name,breed,age,weight,image});
+export const createOne = (name,breed,age,description,image) => {
+    return requster.post(`${baseUrl}/data/pets`,{name,breed,age,description,image});
 }
       
 export const getOne = (id) => {
     return requster.get(`${baseUrl}/data/pets/${id}`)
 }
     
-export const editAnimal = (id,name,breed,age,weight,image) => {
-    return requster.put(`${baseUrl}/data/pets/${id}`,{name,breed,age,weight,image})
+export const editAnimal = (id,name,breed,age,description,image) => {
+    return requster.put(`${baseUrl}/data/pets/${id}`,{name,breed,age,description,image})
 }
 
 export const removeAnimal = (id) => {
