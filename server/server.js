@@ -1336,38 +1336,38 @@
         pets: {
             "ff436770-76c5-40e2-b231-77409eda7a61": {
                 "_ownerId": "35c62d76-8152-4626-8712-eeb96381bea8",
-                "name": "Max",
-                "breed": "Shiba Inu",
+                "name": "Bella",
+                "breed": "Golden Retriever",
                 "age": "2 years",
-                "weight": "5kg",
-                "image": "../images/Shiba-Inu.png",
+                "description": "Bella, a playful Golden Retriever, fractured her leg while chasing a squirrel. Her owner, Maria, couldn't afford the surgery. IBAN: GB29HNBK60161331926819",
+                "image": "https://d128mjo55rz53e.cloudfront.net/media/images/blog-breed-golden_retriever_2.max-400x400.format-jpeg.jpg",
                 "_createdOn": 1617194128618
             },
             "1840a313-225c-416a-817a-9954d4609f7c": {
                 "_ownerId": "35c62d76-8152-4626-8712-eeb96381bea8",
-                "name": "Athena",
-                "breed": "American Curl",
-                "age": "1 year",
-                "weight": "3kg",
-                "image": "../images/cat2.jpg",
+                "name": "Max",
+                "breed": "German Shepherd",
+                "age": "5 year",
+                "description": "Max, a malnourished German Shepherd, was rescued by Sarah. Her limited income couldn't cover Max's vet bills. IBAN: FR7617528045737299989305690",
+                "image": "https://images.fineartamerica.com/images-medium-large-5/german-shepherd-portrait-eleanor-abramson.jpg",
                 "_createdOn": 1617194210928
             },
             "126777f5-3277-42ad-b874-76d043b069cb": {
                 "_ownerId": "847ec027-f659-4086-8032-5173e2f9c93a",
-                "name": "Apollo",
+                "name": " Daisy",
                 "breed": "Pug",
-                "age": "3 years",
-                "weight": "4kg",
-                "image": "../images/dog2.jpg",
+                "age": "3 months",
+                "description": "Daisy, a sweet pup, suffered from severe dental issues. Her owner couldn't afford treatment. IBAN: DE89370400440532013000",
+                "image": "https://i.pinimg.com/736x/66/3e/5a/663e5a631c79482ff41f985aa1dfe741.jpg",
                 "_createdOn": 1617194295474
             },
             "136777f5-3277-42ad-b874-76d043b069cb": {
                 "_ownerId": "847ec027-f659-4086-8032-5173e2f9c93a",
-                "name": "Chibi",
-                "breed": "Teddy guinea pig",
-                "age": "1 years",
-                "weight": "1kg",
-                "image": "../images/guinea-pig.jpg",
+                "name": "Rocky",
+                "breed": "Labrador",
+                "age": "7 years",
+                "description": "Rocky, a sweet  loyal Labrador mix, began experiencing vision problems due to a genetic condition. Her owner, James, was heartbroken to see Luna struggling but couldn't afford the costly eye surgery she needed. IBAN: ES9121000418450200051332",
+                "image": "https://www.warrenphotographic.co.uk/photography/bigs/00754-Portrait-of-Yellow-Labrador-Retriever-dog-white-background.jpg",
                 "_createdOn": 1617194295480
             }
         },
