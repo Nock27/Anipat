@@ -20,9 +20,9 @@ const editTemplate = (animal,submitHandler) => html`
                     <label for="age">Age:</label>
                     <input name="age" id="age" type="text" value=${animal.age}>
                 </div>
-                <div class="weight">
-                    <label for="weight">Weight:</label>
-                    <input name="weight" id="weight" type="text" value=${animal.weight}>
+                <div class="description">
+                    <label for="description">Description:</label>
+                    <input name="description" id="description" type="text" value=${animal.description}>
                 </div>
                 <div class="image">
                     <label for="image">Image:</label>
@@ -42,10 +42,10 @@ export const editView = (ctx) => {
         const name = formData.get('name');
         const breed = formData.get('breed');
         const age = formData.get('age');
-        const weight = formData.get('weight');
+        const description = formData.get('description');
         const image = formData.get('image');
-        if(name.length !== 0 && breed.length !== 0 && age.length !== 0 && weight.length !== 0 && image.length !== 0){
-            animalService.editAnimal(ctx.params.animalId,name,breed,age,weight,image)
+        if(name.length !== 0 && breed.length !== 0 && age.length !== 0 && description.length !== 0 && image.length !== 0){
+            animalService.editAnimal(ctx.params.animalId,name,breed,age,description,image)
                 .then(() => {
                     ctx.page.redirect(`/pets/${ctx.params.animalId}`);
                 })
