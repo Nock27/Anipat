@@ -14,8 +14,7 @@ const detailsTemplate = (animal,user,animalOwner) => html`
                     <h1>Name: ${animal.name}</h1>
                     <h3>Breed: ${animal.breed}</h3>
                     <h4>Age: ${animal.age}</h4>
-                    <h4>Weight: ${animal.weight}</h4>
-                    <h4 class="donation">Donation: 0$</h4>
+                    <h4>Description: ${animal.description}</h4>
                 </div>
                 <!-- if there is no registered user, do not display div-->
                 ${user ? html`
@@ -26,9 +25,6 @@ const detailsTemplate = (animal,user,animalOwner) => html`
                         <a href="/remove/${animal._id}" class="remove">Delete</a>
                         `: nothing
                          }
-                        
-                        <!--(Bonus Part) Only for no creator and user-->
-                        <a href="/donate" class="donate">Donate</a>
                     </div>
                 `
                 : nothing}
