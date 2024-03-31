@@ -6,7 +6,7 @@ const createTemplate = (createPetHandler) => html`
         <form class="createForm" @submit=${createPetHandler}>
             <img src="./images/animal-icon-create.png">
             <div>
-                <h2>Create PetPal</h2>
+                <h2>Create card</h2>
                 <div class="name">
                     <label for="name">Name:</label>
                     <input name="name" id="name" type="text" placeholder="Max">
@@ -27,7 +27,7 @@ const createTemplate = (createPetHandler) => html`
                     <label for="image">Image:</label>
                     <input name="image" id="image" type="text" placeholder="./image/dog.jpeg">
                 </div>
-                <button class="btn" type="submit">Create Pet</button>
+                <button class="btn" type="submit">Create card</button>
             </div>
         </form>
     </section>

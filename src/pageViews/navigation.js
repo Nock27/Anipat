@@ -8,7 +8,7 @@ const guestView = html`
 `
 
 const userView = html`
-    <li><a href="/create">Create Postcard</a></li>
+    <li><a href="/create">Create card</a></li>
     <li><a href="/logout">Logout</a></li>
 `
 

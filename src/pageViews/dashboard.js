@@ -25,7 +25,7 @@ const animalBoardTemplate = (animal) => html`
 
 const dashboardtemplate = (animals) => html`
     <section id="dashboard">
-        <h2 class="dashboard-title">Services for every animal</h2>
+        <h2 class="dashboard-title">Animals in Need</h2>
         <div class="animals-dashboard">
             
 
