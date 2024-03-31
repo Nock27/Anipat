@@ -19,9 +19,9 @@ const createTemplate = (createPetHandler) => html`
                     <label for="age">Age:</label>
                     <input name="age" id="age" type="text" placeholder="2 years">
                 </div>
-                <div class="weight">
-                    <label for="weight">Weight:</label>
-                    <input name="weight" id="weight" type="text" placeholder="5kg">
+                <div class="description">
+                    <label for="description">Description:</label>
+                    <input name="description" id="description" type="text" placeholder="Write description and IBAN information...">
                 </div>
                 <div class="image">
                     <label for="image">Image:</label>
@@ -43,10 +43,11 @@ export const createView = (ctx) => {
         const name = formData.get('name');
         const breed = formData.get('breed');
         const age = formData.get('age');
-        const weight = formData.get('weight');
+        const description = formData.get('description');
         const image = formData.get('image');
-        if(name.length !== 0 && breed.length !== 0 && age.length !== 0 && weight.length !== 0 && image.length !== 0){
-            animalService.createOne(name,breed,age,weight,image)
+        // const description = formData.get('description');
+        if(name.length !== 0 && breed.length !== 0 && age.length !== 0 && description.length !== 0 && image.length !== 0){
+            animalService.createOne(name,breed,age,description,image)
                 .then(() => {
                     
                     ctx.page.redirect('/dashboard');
