@@ -1370,6 +1370,16 @@
                 "image": "https://www.warrenphotographic.co.uk/photography/bigs/00754-Portrait-of-Yellow-Labrador-Retriever-dog-white-background.jpg",
                 "_createdOn": 1617194295480
             }
+            ,
+            "126777f5-3277-42ad-b874-76d043b080cb": {
+                "_ownerId": "847ec027-f659-4086-8032-5173e2f9c93a",
+                "name": " Marie",
+                "breed": "Pinscher",
+                "age": "3 years",
+                "description": "Marie, a loyal pinscher, having respiratory problems. The owner can't afford the treatment for Marie. IBAN: IT60X0542811101000000123456",
+                "image": "https://t1.uc.ltmcdn.com/es/posts/9/5/7/como_cuidar_a_un_pinscher_miniatura_42759_600.jpg",
+                "_createdOn": 1617194295474
+            }
         },
         donation: {}
     };
