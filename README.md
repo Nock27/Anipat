@@ -47,3 +47,7 @@ Start the development server
 ```bash
   npm run dev
 ```
+
+https://github.com/Nock27/Anipat/assets/125079323/73cc49c4-b3a3-4439-90e1-9cc4a0bd619e
+
+
