@@ -3,7 +3,8 @@ html {
 }
 
 body {
-  background-image: url(/images/background.jpg);
+  /* background-image: url(/images/background.jpg); */
+  background-color: #9ec89e;
   background-repeat: no-repeat;
   background-size: cover;
   padding: 0px;
@@ -26,7 +27,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 0px 10px;
-  background-color: #cf3709af;
+  background-color: #B3C89E;
   max-height: 5rem;
 }
 
@@ -55,9 +56,10 @@ footer {
   font-weight: bolder;
   text-align: center;
   padding: 10px;
-  background-color: #cf3709af;
+  background-color: #B3C89E;
   bottom: 0;
   left: 0;
   width: auto;
   max-height: 2rem;
+  color: black;
 }

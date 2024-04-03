@@ -5,19 +5,20 @@
   scroll-behavior: smooth;
   margin-left: 20px;
   margin-right: 20px;
+  
 }
 
 .animals-dashboard::-webkit-scrollbar {
-  box-shadow: inset 0 0 5px grey;
+  box-shadow: inset 0 0 5px #6f8c6f;
   border-radius: 10px;
 }
 
 .animals-board {
-  box-shadow: -5px 2px 1px  #68606062;
+  box-shadow: -5px 2px 1px  #6f8c6f;
   width: 300px;
   text-align: center;
-  border: 1px solid #ffc5c1;
-  background: #cf370991;
+  border: 1px solid #9ec89e;
+  background: #B3C89E;
   margin: 0px 10px;
   padding: 20px 20px;
   border-radius: 12px;
@@ -26,10 +27,13 @@
 .animals-dashboard h2 {
   font-size: 22px;
   font-weight: bolder;
+  color: black;
 }
 
 .animals-dashboard h3 {
   font-size: 18px;
+  color: black;
+
 }
 
 .animal-image-cover {
@@ -52,7 +56,7 @@
   border-radius: 10px;
   display: inline;
   align-items: center;
-  background-color: #f34515;
+  background-color: #9ec89e;
   transition: 500ms;
   color: black;
   font-size: 18px;
@@ -64,12 +68,14 @@
   margin-top: 20px;
   margin-left: 100px;
   margin-right: 5px;
-  box-shadow: 6px 6px 20px #464a4e62, -6px -6px 20px #464a4e62;
+  box-shadow: 3px 3px 20px #92b892, -3px -3px 20px #92b892;
 }
 
 .dashboard-title {
+  color: black;
   text-align: center;
   font-weight: bolder;
+  font-size: 30px;
 }
 
 .action > a:hover {
